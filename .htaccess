@@ -1,0 +1,10 @@
+# Apache redirects
+RewriteEngine On
+
+# Redirect prelcoauctions.com to rematesplrelco.cl
+RewriteCond %{HTTP_HOST} ^prelcoauctions\.com$ [NC]
+RewriteRule ^(.*)$ https://rematesplrelco.cl/$1 [R=301,L]
+
+# Redirect www.prelcoauctions.com to rematesplrelco.cl
+RewriteCond %{HTTP_HOST} ^www\.prelcoauctions\.com$ [NC]
+RewriteRule ^(.*)$ https://rematesplrelco.cl/$1 [R=301,L]
