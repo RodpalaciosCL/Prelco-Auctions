@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -24,12 +24,6 @@ function App() {
     status: ''
   });
 
-  // Redirect to new domain
-  useEffect(() => {
-    if (window.location.hostname === 'prelcoauctions.com' || window.location.hostname === 'www.prelcoauctions.com') {
-      window.location.replace('https://rematesplrelco.cl');
-    }
-  }, []);
 
   const handleAuthClick = () => {
     setIsAuthModalOpen(true);
