@@ -1,3 +1,2 @@
 # Netlify redirects
-https://prelcoauctions.com/* https://rematesplrelco.cl/:splat 301!
-https://www.prelcoauctions.com/* https://rematesplrelco.cl/:splat 301!
+/* https://rematesprelco.cl 301!
